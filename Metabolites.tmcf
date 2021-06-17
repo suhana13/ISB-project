@@ -1,0 +1,33 @@
+
+Node: E:Metabolites->E0
+typeOf: dcs:Metabolite
+dcid: C:Metabolites->Id
+abbreviation: C:Metabolites->Abbreviation
+name: C:Metabolites->Name
+chargedFormula: C:Metabolites->Charged_Formula
+charge: C:Metabolites->Charge
+averageMolecularWeight: C:Metabolites->Average_Molecular_Weight
+monoIsotropicWeight: C:Metabolites->Monoisotopic_Weight
+keggCompoundID: C:Metabolites->KEGGID
+pubChemCompoundID: C:Metabolites->PubChemID
+chebiID: C:Metabolites->ChebiID
+humanMetabolomeDatabaseID: C:Metabolites->HMDB
+pdMapName: C:Metabolites->PDMapName
+reconmap: C:Metabolites->Reconmap
+reconmap3: C:Metabolites->ReconMap3
+foodDB: C:Metabolites->FoodDB
+chemSpiderID: C:Metabolites->ChemSpider
+bioCyc: C:Metabolites->BioCyc
+biggId: C:Metabolites->BiggID
+wikipedia: C:Metabolites->Wikipedia
+drugBankMetaboliteID: C:Metabolites->DrugBank
+seed: C:Metabolites->Seed
+metaNetX: C:Metabolites->MetaNetX
+knapsack: C:Metabolites->KNApSAck
+metlin: C:Metabolites->METLIN
+casRegistry: C:Metabolites->CAS_REGISTRY
+edpId: C:Metabolites->edpID
+inCHIKey: C:Metabolites->InCHIKey
+inCHIString: C:Metabolites->InCHIString
+simplifiedMolecularInputLineEntrySystem: C:Metabolites->SMILES
+
