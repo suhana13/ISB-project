@@ -1,0 +1,437 @@
+#Entities
+Node: dcid:Metabolite
+name: "Metabolite"
+typeOf: schema: Class 
+subClassOf: dcs:ChemicalCompound 
+description: "Metabolites participate in biochemical reactions"
+
+Node: dcid:MetabolicReaction
+name: "MetabolicReaction"
+typeOf: schema:Class
+description: "Metabolic reactions"
+
+Node: dcid:MetabolicReactionSubsystem
+name: "MetabolicReactionSubsystem"
+typeOf: schema:Class
+description: "Metabolic Reaction Subsystem"
+
+#Properties 
+Node: dcid:humanGEMID
+name: "humanGEMID"
+typeOf: schema:Property 
+rangeIncludes: schema:Text 
+domainIncludes: dcs:Metabolite, dcs:MetabolicReaction, dcs:MetabolicReactionSubsystem
+description: "Human Genome-scale metabolic Model ID"
+
+Node: dcid: cellularCompartment
+name: "cellularCompartment"
+typeOf: schema:Property 
+rangeIncludes: schema:CellularCompartmentEnum
+domainIncludes: dcs: Metabolite 
+description: "Human Genome-scale metabolic Model ID"
+
+Node: dcid:chemicalFormula
+name: "chemicalFormula"
+typeOf: schema:Property 
+rangeIncludes: schema:Text
+domainIncludes: dcs:ChemicalCompound 
+description: "Chemical Formula"
+
+Node: dcid:biggID
+name: "biggID"
+typeOf: schema:Property 
+rangeIncludes: schema:Text
+domainIncludes: dcs:Metabolite, dcs:MetabolicReaction
+description: "BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions. It is hosted and maintained by the Systems Biology Research Group at the University of California, San Diego."
+descriptionUrl: "http://bigg.ucsd.edu/"
+
+Node: dcid:metaNetXID
+name: "metanetxID"
+typeOf: schema:Property 
+rangeIncludes: schema:Text
+domainIncludes: dcs:Metabolite, dcs:MetabolicReaction
+description: "MetaNetX/MNXref is a reconciliation of metabolites and biochemical reactions providing cross-links between major public biochemistry and Genome-Scale Metabolic Network (GSMN) databases."
+descriptionUrl: "https://academic.oup.com/nar/article/49/D1/D570/5958493"
+
+Node: dcid:lipidMapsID
+name: "lipidMapsID"
+typeOf: schema:Property 
+rangeIncludes: schema:Text
+domainIncludes: dcs:Metabolite, dcs:MetabolicReaction
+description: "LIPID MAPS® Lipidomics Gateway was created in 2003 via an NIH “Glue Grant” to provide access to lipid nomenclature, databases, tools, protocols, standards, tutorials, meetings, publications, and other resources and serving the international lipid research community."
+descriptionUrl: "https://www.lipidmaps.org/"
+
+Node: dcid:reversibleReaction
+name: "reversibleReaction"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:MetabolicReaction
+description: "Indicate wheather a reaction is reversible"
+
+Node: dcid:fastReaction
+name: "fastReaction"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:MetabolicReaction
+description: 
+
+Node: dcid:metabolicFluxRange
+name: "metabolicFluxRange"
+typeOf: schema:Property
+rangeIncludes: dcs:QuantityRange
+domainIncludes: dcs:MetabolicReaction
+description:
+
+Node: dcid:enzymeCommissionNumber
+name: "enzymeCommissionNumber"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:MetabolicReaction
+description: "The Enzyme Commission number (EC number) is a numerical classification scheme for enzymes, based on the chemical reactions they catalyze"
+
+Node: dcid:keggReactionID
+name: "keggReactionID"
+typeOf: schema: Property
+rangeIncludes: schema: Text
+domainIncludes: dcs:MetabolicReaction
+description: 
+
+Node: dcid:reactomeID
+name: "reactomeID"
+typeOf: schema: Property
+rangeIncludes: schema: Text
+domainIncludes: dcs:MetabolicReaction
+description: "Reactome identifier. REACTOME is an open-source, open access, manually curated and peer-reviewed pathway database."
+descriptionUrl: "https://reactome.org/"
+
+Node: dcid:transporterClassificationDatabaseID
+name: "transporterClassificationDatabaseID"
+typeOf: schema: Property
+rangeIncludes: schema: Text
+domainIncludes: dcs:MetabolicReaction
+description: "The database details a comprehensive IUBMB approved classification system for membrane transport proteins known as the Transporter Classification (TC) system. The TC system is analogous to the Enzyme Commission (EC) system for classification of enzymes, except that it incorporates both functional and phylogenetic information"
+descriptionUrl: "https://www.tcdb.org/"
+
+Node: dcid:hierachyType
+name: "hierachyType"
+typeOf: schema:Property 
+rangeIncludes: dcs:hierachyTypeEnum 
+domainIncludes: dcs:MetabolicReactionSubsystem
+description: "Classification system"
+
+Node: dcid:geneRole
+name: "geneRole"
+typeOf: schema:Property
+rangeIncludes: dcs:MetabolicReaction
+domainIncludes: dcs:Gene
+description: "Gene product participate in certain activities"
+
+Node: dcid:memberOfMetabolicReactionSubsystem
+name: "memberOfMetabolicReactionSubsystem"
+typeOf: schema:Property
+rangeIncludes: dcs:MetabolicReactionSubsystem
+domainIncludes: dcs:MetabolicReaction 
+description:"Member Of Metabolic Reaction Subsystem"
+
+Node: dcid:productMetabolite
+name: "productMetabolite"
+typeOf: schema:Property 
+rangeIncludes: dcs:Metabolite
+domainIncludes: dcs:MetabolicReaction
+description: "Products of the reaction"
+
+Node: dcid:reactantMetabolite
+name: "reactantMetabolite"
+typeOf: schema:Property 
+rangeIncludes: dcs:Metabolite
+domainIncludes: dcs:MetabolicReaction
+description: "Reactants of the reaction"
+
+Node: dcid:systemsBiologyOntologyTerm
+typeOf: dcs:Property
+domainIncludes: dcs:Gene, dcs:MetabolicReactionSubsystem
+rangeIncludes: schema:Text
+
+
+
+
+
+
+#For metabolites------------
+Node: dcid:abbreviation
+typeOf: schema:property
+name: "abbreviation"
+domainIncludes: dcs:Thing
+rangeIncludes: schema:Text
+description: "Abbreviation of an object's name."
+
+Node: dcid:chemicalName
+typeOf: schema:property
+name: "chemicalName"
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Text
+description: "Chemical name of chemical compounds."
+
+Node: dcid:chemicalCharge
+typeOf: schema:property
+name: "chemicalCharge"
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Text
+description: "Charge on a chemical compound."
+
+Node: dcid:averageMolecularWeight
+typeOf: schema:property
+name: "averageMolecularWeight"
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Text
+description: "Average molecular weight of a chemical compound."
+
+Node: dcid:monoIsotropicWeight
+typeOf: schema:property
+name: "monoIsotropicWeight"
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Text
+description: "Monoisotropic weight of a chemical compound."
+
+Node: dcid:parkinsonsDiseaseMapName
+typeOf: schema:property
+name: "parkinsonsDiseaseMapName"
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Text
+description: "PDmapName(parkinson_s_disease_map) describes the  molecular mechanism present in a reaction, which is representative of Parkinsons disease."
+descriptionUrl: "https://wwwen.uni.lu/lcsb/research/parkinson_s_disease_map"
+
+Node: dcid:reconMap
+typeOf: schema:property
+name: "reconmap"
+domainIncludes: dcs:Metabolite
+rangeIncludes: schema:Text
+description: "Recon map number used for interactive visualization of metabolites in the human metabolome."
+descriptionUrl: "https://www.vmh.life"
+
+Node: dcid:reconMap3 
+typeOf: schema:property
+name: "reconMap3"
+domainIncludes: dcs:Metabolite
+rangeIncludes: schema:Text
+description: "Recon map number for a newer version of ReconMap interactive visualizer of human metabolites."
+descriptionUrl: "https://www.vmh.life"
+
+Node: dcid:foodB
+typeOf: schema:property
+name: "foodB"
+domainIncludes: dcs:ChemicalCompound, dcs:Metabolite
+rangeIncludes: schema:Text
+description: "Provides the compositional, biochemical and physiological information about chemical entities."
+descriptionUrl: "https://foodb.ca"
+
+Node: dcid:bioCyc
+typeOf: schema:property
+name: "bioCyc"
+domainIncludes: dcs:Metabolite
+rangeIncludes: schema:Text
+description: "Provides encyclopedic reference to organism-specific predicted metabolic pathways."
+descriptionUrl: "https://biocyc.org"
+
+
+Node: dcid:wikipediaNameReference
+typeOf: schema:property
+name: "wikipediaNameReference"
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Text
+description: "The common name of the chemical compound as referenced on wikipedia pages."
+
+Node: dcid:seedID
+typeOf: schema:property
+name: "seedID"
+domainIncludes: dcs:Metabolite
+rangeIncludes: schema:Text
+description: "The identifier to query the SEED database for comparative genomic analysis."
+descriptionUrl: "https://theseed.org/wiki/Home_of_the_SEED"
+
+Node: dcid:knapsack
+typeOf: schema:property
+name: "knapsack"
+domainIncludes: dcs:Metabolite
+rangeIncludes: schema:Text
+description: "Identifier to query the KNApSAck,a comprehensive Species-Metabolite Relationship Database."
+descriptionUrl: "http://www.knapsackfamily.com/KNApSAcK/"
+
+Node: dcid:metlin
+typeOf: schema:property
+name: "metlin"
+domainIncludes: dcs:Metabolite
+rangeIncludes: schema:Text
+description: "Identifier to query METLIN, a metabolite mass spectral database
+descriptionUrl: "https://metlin.scripps.edu/landing_page.php?pgcontent=mainPage"
+
+Node: dcid:casRegistry
+typeOf: schema:property
+name: "casRegistry"
+domainIncludes: dcs:ChemicalCompound, dcs:Metabolite
+rangeIncludes: schema:Text
+description: "A CAS Registry Number is a unique and unambiguous identifier for a specific substance."
+descriptionUrl: "https://www.cas.org/cas-data/cas-registry
+
+Node: dcid:epaID
+typeOf: schema:property
+name"epaID"
+domainIncludes: dcs:ChemicalCompound, dcs:Metabolite
+rangeIncludes: schema:Text
+description: "EPA number for disposal of hazardous chemical compounds."
+
+Node: dcid:inCHIString
+typeOf: schema:property
+name: "inCHIString"
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Text
+description: "An InChI is a text string composed of segments (layers) separated by delimiters (/), such that Each layer in an InChI string contains a specific class of structural information."
+descriptionUrl: "https://www.inchi-trust.org"
+
+
+Node: dcid:ChemicalReaction
+typeOf: schema:Class
+name: "ChemicalReaction"
+description: "Chemical reactions occuring in metabolic systems."
+
+Node: dcid:reactionDescription
+typeOf: schema:property
+name: "reactionDescription"
+domainIncludes: dcs:ChemicalReaction
+rangeIncludes: schema:Text
+description: "Complete reaction names and subsystems in which they occur."
+
+Node: dcid:chemicalEquation
+typeOf: schema:property
+name: "chemicalEquation"
+domainIncludes: dcs:ChemicalReaction
+rangeIncludes: schema:Text
+desciption: "Chemical equation of the chemical reaction taking place."
+
+Node: dcid:enzymeCommissionNumber
+typeOf: schema:property
+name: "enzymeCommissionNumber"
+domainIncludes: dcs:ChemicalReaction
+rangeIncludes: schema:Text
+description: "The Enzyme Commission (EC) number for enzymes that catalyze chemical reactions.'
+
+Node: dcid:keggOrthologyID
+typeOf: schema:property
+name: "keggOrthologyID"
+domainIncludes: dcs:ChemicalReaction
+rangeIncludes: schema:Text
+description: "Identifier representing the molecular functions of a chemical reaction, in terms of orthologs."
+
+Node: dcid:cogID
+typeOf: schema:property
+name: "cogID"
+domainIncludes: dcs:ChemicalReaction
+rangeIncludes: schema:Text
+desciption: "Identifier representing orthologous proteins from the COG (Cluser of Orthologous Groups) database."
+
+##naming - reactionParticipant
+Node: dcid:reactionParticipant
+type: schema:property
+name: "reactionParticipant"
+domainIncludes: dcs:ChemicalReaction
+rangeIncludes: dcs:Metabolite
+description: "dcid for the metabolite which is a component in the corresponding chemical reaction."
+
+#Microbes
+Node: dcid:Microbe
+typeOf: schema:Class
+name: "Microbe"
+subClassOf: dcs:BiologicalElement
+desciption: "A group of microscopic organisms including bacteria, fungi, protozoa, and viruses."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/books/NBK279387/"
+
+Node: dcid:organismTaxonomicPhylum
+typeOf: schema:property
+name: "organismTaxonomicPhylum"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Text
+description: "A taxonomic category which ranks below Kingdom and above Class."
+
+Node: dcid:organismTaxonomicClass
+typeOf: schema:property
+name: "organismTaxonomicClass"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Text
+description: "A taxonomic category which ranks below Phylum and above Order."
+
+Node: dcid:organismTaxonomicOrder
+typeOf: schema:property
+name: "organismTaxonomicOrder"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Text
+description: "A taxonomic category which ranks below Class and above Family."
+
+Node: dcid:organismTaxonomicFamily
+typeOf: schema:property
+name: "organismTaxonomicFamily"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Text
+description: "A taxonomic category which ranks below Order and above Genus."
+
+Node: dcid:organismTaxonomicGenus
+typeOf: schema:property
+name: "organismTaxonomicGenus"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Text
+description: "A taxonomic category which ranks below Family and above Species."
+
+Node: dcid:microbeGeneInteractionMetric
+typeOf: schema:property
+name: "microbeGeneInteractionMetric"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Quantity
+description: "The number of gene interactions with a microbe."
+
+Node: dcid:microbeReactionMetric
+typeOf: schema:property
+name: "microbeReactionMetric"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Quantity
+description: "The number of chemical reactions a microbe is involved in."
+
+Node: dcid:microbeMetaboliteMetric
+typeOf: schema:property
+name: "microbeMetaboliteInteractionMetric"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Quantity
+description: "The number of metabolites a microbe interacts with."
+
+Node: dcid:dataDraftCreator
+typeOf: schema:property
+name: "dataDraftCreator"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Text
+description: "The name of the person who submitted the draft for the data."
+
+Node: dcid:dateOfDraftCreation
+typeOf: schema:property
+name: "dateOfDraftCreation"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Date
+description: "The date of creation of draft for data submission."
+
+Node: dcid:microbePhenotypeMetric
+typeOf: schema:property
+name: "microbePhenotypeMetric"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Quantity
+description: "The number of phenotypic features associated with the microbe."
+
+Node: dcid:integratedMicrobialGenomeID
+typeOf: schema:property
+name: "integratedMicrobialGenomeID"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Text
+description: "Identifier to look up the Integrated Microbial Genomes(IMG) database."
+
+Node: dcid:kBaseID
+typeOf: schema:property
+name: "knowledgeBaseID"
+domainIncludes: dcs:Microbe
+rangeIncludes: schema:Text
+description: "Identifier to look up microbes at The Department of Energy Systems Biology Knowledgebase."

@@ -1,0 +1,497 @@
+Node: dcid:CellularCompartmentEnum 
+name: "CellularCompartmentEnum"
+subClassOf: schema:Enumeration 
+typeOf: schema:Class 
+
+Node: dcid:CellularCompartmentCytosol
+name: "Cytosol"
+typeOf: dcs:CellularCompartmentEnum 
+
+Node: dcid:CellularCompartmentExtracellular
+name: "Extracellular"
+typeOf: dcs:CellularCompartmentEnum 
+
+Node: dcid:CellularCompartmentLysosome
+name: "Lysosome"
+typeOf: dcs:CellularCompartmentEnum 
+
+Node: dcid:CellularCompartmentEndoplasmicReticulum
+name: "Endoplasmic reticulum"
+typeOf: dcs:CellularCompartmentEnum 
+
+Node: dcid:CellularCompartmentMitochondria
+name: "Mitochondria"
+typeOf: dcs:CellularCompartmentEnum 
+
+Node: dcid:CellularCompartmentPeroxisome
+name: "Peroxisome"
+typeOf: dcs:CellularCompartmentEnum 
+
+Node: dcid:CellularCompartmentGolgiApparatus
+name: "Golgi apparatus"
+typeOf: dcs:CellularCompartmentEnum 
+
+Node: dcid:CellularCompartmentNucleus
+name: "Nucleus"
+typeOf: dcs:CellularCompartmentEnum 
+
+Node: dcid:CellularCompartmentInnerMitochondria
+name: "Inner mitochondria"
+typeOf: dcs:CellularCompartmentEnum 
+
+Node: dcid:HierachyTypeEnum
+name: "HierachyTypeEnum"
+subClassOf: schema:Enumeration 
+typeOf: schema:Class 
+
+Node: dcid:HierachyTypePartonomy
+name: "Partonomy"
+typeOf: dcs:HierachyTypeEnum
+
+
+Node: dcid:BacteriaGramStainTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BacteriaGramStainTypeEnum"
+desciption: "The result of gram staining procedure on bacteria, either positive or negative."
+
+Node: dcid:BacteriaGramStainTypePositive
+name: "Positive"
+typeOf: dcs:BacteriaGramStainTypeEnum
+
+Node: dcid:BacteriaGramStainTypeNegative
+name: "Negative"
+typeOf: dcs:BacteriaGramStainTypeEnum
+
+Node: dcid:DataCollectionPlatformEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "DataCollectionPlatformEnum"
+description: "Platform used for data collection."
+
+Node: dcid:DataCollectionPlatformModelSEED
+name: "ModelSEED"
+typeOf: dcs:dataCollectionPlatformEnum
+
+Node: dcid:DataCollectionPlatformKbase
+name: "Kbase"
+typeOf: dcs:dataCollectionPlatformEnum
+
+
+## oxygen stat -------
+Node: dcid:OxygenRequirementStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "oxygenRequirementStatusEnum"
+description: "Microbial classification based on the amount of oxygen required for functioning."
+
+Node: dcid:OxygenRequirementStatusFacultative_anaerobe
+name: "Facultative_anaerobe"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusAerobe
+name: "Aerobe"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusObligate_anaerobe
+name: "Obligate_anaerobe"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusObligate_aerobe
+name: "Obligate_aerobe"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusAnaerobe
+name: "Anaerobe"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusMicroaerophile
+name: "Microaerophile"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusNanaerobe
+name: "Nanaerobe"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusFacultativeanaerobe_air+CO2
+name: "Facultative_anaerobe_air+CO2"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusAerobe_microaerophile
+name: "Aerobe_microaerophile"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusMicroaerophile_anaerobe
+name: "Microaerophile_anaerobe"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusAerotolerant
+name: "Aerotolerant"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusObligatory anaerobe
+name: "Obligatory_anaerobe"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusObligate_anaerobe_(inferred from sequence)
+name: "Obligate_anaerobe_(inferred from sequence)"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+Node: dcid:OxygenRequirementStatusMicroaerophilic
+name: "Microaerophilic"
+typeOf: dcs:OxygenRequirementStatusEnum
+
+#--------
+
+Node: dcid:PathogenMethodOfInvasionPathogen
+name: "Pathogen"
+typeOf: dcs:PathogenMethodOfInvasionEnum
+
+Node: dcid:PathogenMethodOfInvasionnan
+name: "nan"
+typeOf: dcs:PathogenMethodOfInvasionEnum
+
+Node: dcid:PathogenMethodOfInvasionCommensal
+name: "Commensal"
+typeOf: dcs:PathogenMethodOfInvasionEnum
+
+Node: dcid:PathogenMethodOfInvasionOpportunistic_pathogen
+name: "Opportunistic_pathogen"
+typeOf: dcs:PathogenMethodOfInvasionEnum
+
+Node: dcid:PathogenMethodOfInvasionUncharacterized
+name: "Uncharacterized"
+typeOf: dcs:PathogenMethodOfInvasionEnum
+
+Node: dcid:PathogenMethodOfInvasionProbiotic
+name: "Probiotic"
+typeOf: dcs:PathogenMethodOfInvasionEnum
+
+Node: dcid:PathogenMethodOfInvasionProbiotic_potential
+name: "Probiotic_potential"
+typeOf: dcs:PathogenMethodOfInvasionEnum
+
+Node: dcid:PathogenMethodOfInvasionCommensal_(inferred_from_sequence)
+name: "Commensal_(inferred_from_sequence)"
+typeOf: dcs:PathogenMethodOfInvasionEnum
+
+Node: dcid:PathogenMethodOfInvasionPutative_Pathogen
+name: "Putative_Pathogen"
+typeOf: dcs:PathogenMethodOfInvasionEnum
+
+
+
+
+#metabolism enum ------
+Node: dcid:MicrobialMetabolismTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "MicrobialMetabolismTypeEnum"
+description: "The type of metabolism a microbe follows."
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_fermentative_or_respiratory
+name: "Saccharolytic_fermentative_or_respiratory"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeRespiratory
+name: "Respiratory"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFermentative
+name: "Fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_glutamate_is_fermented
+name: "Asaccharolytic_glutamate_is_fermented"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic
+name: "Asaccharolytic"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeStrictly_respiratory_amino_acids_utilized
+name: "Strictly_respiratory_amino_acids_utilized"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_fermentative
+name: "Saccharolytic_fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_nonfermentative
+name: "Asaccharolytic_nonfermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_non-fermentative
+name: "Saccharolytic_non-fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeWeakly_saccharolytic_fermentative
+name: "Weakly_saccharolytic_fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_fermentative_acetate_and_lactate_converted_to_butyrate
+name: "Saccharolytic_fermentative_acetate_and_lactate_converted_to_butyrate"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic
+name: "Saccharolytic"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeNon-fermentative_asaccharolytic
+name: "Non-fermentative_asaccharolytic"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeRespiration_or_fermentation_of_carbohydrates_and_central_metabolism_intermediates
+name: "Respiration_or_fermentation_of_carbohydrates_and_central_metabolism_intermediates"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeNon-fermentative_respiratory
+name: "Non-fermentative_respiratory"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeStrictly_respiratory_asaccharolytic
+name: "Strictly_respiratory_asaccharolytic"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeOnly_anaerobic_respiration_nonfermentative_asaccharolytic
+name: "Only_anaerobic_respiration_nonfermentative_asaccharolytic"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeUncharacterized
+name: "Uncharacterized"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_fermentative_hydrogen_used_as_energy_source
+name: "Saccharolytic_fermentative_hydrogen_used_as_energy_source"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeRespiratory_non_fermentative
+name: "Respiratory_non_fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_respiratory_or_fermentative
+name: "Saccharolytic_respiratory_or_fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_fermentative_acetate_converted_to_butyrate
+name: "Saccharolytic_fermentative_acetate_converted_to_butyrate"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeStrictly_respiratory_asaccharolytic_only_amino_acids_and_TCA_cycle_intermediates_used
+name: "Strictly_respiratory_asaccharolytic_only_amino_acids_and_TCA_cycle_intermediates_used"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeOxidation_of_ammonia_inorganic_carbon
+name: "Oxidation_of_ammonia_inorganic_carbon"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFermentative_respiratory
+name: "Fermentative_respiratory"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFermentative_or_respiratory_citrate_and_a_variety_of_other_compounds_used
+name: "Fermentative_or_respiratory_citrate_and_a_variety_of_other_compounds_used"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_fermentative
+name: "Asaccharolytic_fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFermentative_few_compounds_used
+name: "Fermentative_few_compounds_used"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFerments_carbohydrates_and_amino_acids
+name: "Ferments_carbohydrates_and_amino_acids"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_fermentative_proteolytic
+name: "Saccharolytic_fermentative_proteolytic"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeProteolytic_fermentative
+name: "Proteolytic_fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeProteolytic_few_carbohydrates_fermented
+name: "Proteolytic_few_carbohydrates_fermented"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFew_carbohydrates_weakly_fermented
+name: "Few_carbohydrates_weakly_fermented"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_fermentative_utilizes_methoxybenzoic_acid
+name: "Saccharolytic_fermentative_utilizes_methoxybenzoic_acid"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFerments_only_L-rhamnose_L-fucose_L-lyxose_and_D-arabinose
+name: "Ferments_only_L-rhamnose_L-fucose_L-lyxose_and_D-arabinose"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeProteolytic_non-sachharolytic
+name: "Proteolytic_non-sachharolytic"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeNon-saccharolytic
+name: "Non-saccharolytic"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_respiratory
+name: "Saccharolytic_respiratory"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeOnly_anaerobic_respiration_with_sulfate_as_electron_acceptor_nonfermentative_asaccharolytic
+name: "Only_anaerobic_respiration_with_sulfate_as_electron_acceptor_nonfermentative_asaccharolytic"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFermentative_or_respiratory_comparatively_few_carbohydrates_used
+name: "Fermentative_or_respiratory_comparatively_few_carbohydrates_used"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeNon-fermentative
+name: "Non-fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFermentative_or_respiratory_various_carbohydrates_used
+name: "Fermentative_or_respiratory_various_carbohydrates_used"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFermentative_or_respiratory_various_carbohydrates_amino_acids_and_TCA_cycle_intermediates_used
+name: "Fermentative_or_respiratory_various_carbohydrates_amino_acids_and_TCA_cycle_intermediates_used"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFermentative_or_respiratory
+name: "Fermentative_or_respiratory"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_peptone_and_amino_acid_converted_to_acetate
+name: "Asaccharolytic_peptone_and_amino_acid_converted_to_acetate"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_proteolytic_fermentative
+name: "Saccharolytic_proteolytic_fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFerments_amino_acids
+name: "Ferments_amino_acids"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFew_carbon_sources_used_fermentation_capabilities_undescribed
+name: "Few_carbon_sources_used_fermentation_capabilities_undescribed"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeStrictly_respiratory_glucose_is_oxidzed_but_no_other_sugar_is_used
+name: "Strictly_respiratory_glucose_is_oxidzed_but_no_other_sugar_is_used"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypefermentative_respiratory
+name: "fermentative_respiratory"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismType_Saccharolytic_respiratory
+name: "_Saccharolytic_respiratory"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_fermentative_nonproteolytic
+name: "Saccharolytic_fermentative_nonproteolytic"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_fermentative_lactate_fermented_to_propionate
+name: "Saccharolytic_fermentative_lactate_fermented_to_propionate"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_fermentative_(inferred_from_sequence)
+name: "Saccharolytic_fermentative_(inferred_from_sequence)"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeMethanogen
+name: "Methanogen"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeUses_carbon_dioxide_hydrogen_and_formate_as_energy_sources_and_acetate_as_carbon_source
+name: "Uses_carbon_dioxide_hydrogen_and_formate_as_energy_sources_and_acetate_as_carbon_source"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeUtilizes_methanol
+name: "Utilizes_methanol"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeUses_methanol_and_hydrogen_as_energy_sources_and_carbon_dioxide_and_acetate_as_carbon_sources
+name: "Uses_methanol_and_hydrogen_as_energy_sources_and_carbon_dioxide_and_acetate_as_carbon_sources"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFerments_only_arginine
+name: "Ferments_only_arginine"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFerments_only_glucose
+name: "Ferments_only_glucose"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeOxidative_non-fermentative
+name: "Oxidative_non-fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_Fermentative
+name: "Asaccharolytic_Fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_uses_oxalate_as_sole_energy_source
+name: "Asaccharolytic_uses_oxalate_as_sole_energy_source"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_proteolytic_fermentative
+name: "Asaccharolytic_proteolytic_fermentative"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_peptone_and_oligopeptides_as_main_energy_source
+name: "Asaccharolytic_peptone_and_oligopeptides_as_main_energy_source"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAaccharolytic_peptone_and_oligopeptides_as_main_energy_source
+name: "Aaccharolytic_peptone_and_oligopeptides_as_main_energy_source"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_ferments_only_succinate
+name: "Asaccharolytic_ferments_only_succinate"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFermentative_or_respiratory_various_carbohydrates_and_amino_acids_used
+name: "Fermentative_or_respiratory_various_carbohydrates_and_amino_acids_used"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_some_carbohydrates_may_be_weakly_fermented
+name: "Asaccharolytic_some_carbohydrates_may_be_weakly_fermented"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeStrictly_respiratory_amino_acids_carbohydrates_and_fatty_acids_utilized
+name: "Strictly_respiratory_amino_acids_carbohydrates_and_fatty_acids_utilized"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeStrictly_aerobic_respiratory
+name: "Strictly_aerobic_respiratory"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeFermentative_or_respiratory_variety_of_carbon_sources_used
+name: "Fermentative_or_respiratory_variety_of_carbon_sources_used"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeSaccharolytic_or_requires_sulphur
+name: "Saccharolytic_or_requires_sulphur"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeUtilize_urea
+name: "Utilize_urea"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeUses_esculine_urea_and_malate_as_carbon_source
+name: "Uses_esculine_urea_and_malate_as_carbon_source"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+Node: dcid:MicrobialMetabolismTypeAsaccharolytic_ferments_TCA_cycle_intermediates
+name: "Asaccharolytic_ferments_TCA_cycle_intermediates"
+typeOf: dcs:MicrobialMetabolismTypeEnum
+
+#--------
+
