@@ -1,0 +1,19 @@
+
+Node: E:ChemicalReaction->E0
+typeOf: dcs:ChemicalReaction
+dcid: C:ChemicalReaction->Id
+abbreviation: C:ChemicalReaction->Abbreviation
+reactionDescription: C:ChemicalReaction->Description
+chemicalEquation: C:ChemicalReaction->Formula
+memberOfMetabolicReactionSubsystem: C:ChemicalReaction->subsystem
+enzymeCommissionNumber: C:ChemicalReaction->EcNumber
+keggReactionID: C:ChemicalReaction->KEGGID
+keggOrthologyID: C:ChemicalReaction->KEGGOrthology
+cogID: C:ChemicalReaction->Cog
+seed: C:ChemicalReaction->Seed
+metaNetX: C:ChemicalReaction->MetaNetX
+reactionParticipant: C:ChemicalReaction->MetaboliteMatch
+
+
+
+
