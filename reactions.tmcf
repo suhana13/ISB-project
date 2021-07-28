@@ -6,7 +6,7 @@ abbreviation: C:ChemicalReaction->abbreviation
 reactionDescription: C:ChemicalReaction->description
 chemicalEquation: C:ChemicalReaction->formula
 memberOfMetabolicReactionSubsystem: C:ChemicalReaction->subsystem
-enzymeCommissionNumber: C:ChemicalReaction-ecnumber
+enzymeCommissionNumber: C:ChemicalReaction->ecnumber
 keggReactionID: C:ChemicalReaction->keggId
 keggOrthologyID: C:ChemicalReaction->keggorthology
 cogID: C:ChemicalReaction->cog
